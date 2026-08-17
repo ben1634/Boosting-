@@ -1,0 +1,46 @@
+
+.smmvc-tags{
+ max-width: 600px;
+height: auto; 
+flex-grow: 1;
+margin-top: 16px;
+display: flex;
+flex-direction: column;
+gap: 12px;
+
+
+}
+
+
+.smh{
+max-width: 600px;
+height: auto;
+font-size: 1rem;
+font-weight: 700;
+color: #053685;
+margin-bottom: 0;
+
+}
+
+
+.sm-tag1{
+
+max-width: 600px;
+max-height: 350px;
+font-size: 0.8rem;
+font-weight: 400;
+margin-top: 12px;
+margin-bottom: 62px;
+padding-inline: 42px;
+
+}
+
+.tag1-wrap{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+
+
+}

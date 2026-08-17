@@ -1,0 +1,96 @@
+/* variables.css */
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #64748b;
+  --danger-color: #ef4444;
+
+  --font-main: Arial, sans-serif;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+
+  --border-radius: 8px;
+
+
+/* for swiper project */
+  --base-clr: #11121a;
+  --line-clr: #42434a;
+  --color-bg-primary: #2225333e;
+  --hover-clr: #455872;
+  --text-clr: #e6e6ef;
+  --accent-clr: #5e63ff;
+  --color-hover-primary: #695cfe;
+  --secondary-text-clr: #b0b3c1;
+  --color-shadow: rgba(105, 103, 103, 0.5);
+
+/* Color system */
+/* combo site 1: font: sf pro display */
+--bg-primary1:#D9EFF7;
+--bg-primary2:#9BBBFC;
+--bg-primary3:#4741A6;
+--bg-primary4:#F9CE69;
+
+/* combo site 2: font:poppins */
+--bg-dfcom1:#EAF9E7;
+--bg-dfcom2:#C0E6BA;
+--bg-dfcom3:#4CA771;
+--bg-dfcom4:#013237;
+
+/* combo site 3: font:circular std */
+--bg-chance1:#F6E8DF;
+--bg-chance2:#FEAE96;
+--bg-chance3:#FE979C;
+--bg-chance4:#013237;
+
+/* combo site 1: font:Paytone One*/
+
+--bg-prize1:#FCDC73;
+--bg-prize1:#E76268;
+--bg-prize1:#193948;
+--bg-prize1:#4FADCO;
+
+/* combo site 1: font: Gill Sans*/
+--bg-manchy1:#252525;
+--bg-manchy2:#60CBFF;
+--bg-manchy3:#3664F4;
+--bg-manchy4:#E85353;
+
+
+/* combo site 1: font: Whyte*/
+--bg-dozzy1:#1A1A1A;
+--bg-dozzy2:#77ACB7;
+--bg-dozzy3:#F8B097;
+--bg-dozzy4:#3FC495;
+
+/* combo site 1: font:Sofia Pro */
+
+--bg-hunch1:#C2E7C9;
+--bg-huncho2:#F2AC20;
+--bg-huncho3:#4265D6;
+--bg-huncho4:#293855;
+
+
+/* Container  Width */
+
+
+--container-width-lg:80%;
+
+--container-width-md:90%;
+
+--container-width-sm:94%;
+
+
+}
+
+
+.container-munch{
+
+width: var(--container-width-lg);
+background-color: var(--bg-manchy4);
+max-width: 1216px;
+min-height: 400px;
+margin: auto;
+
+}

@@ -1,0 +1,178 @@
+
+.tp{
+width: 100%;
+
+}
+
+
+.tp-conty{
+width: 100%;
+max-width: 1290px;
+height: auto;
+padding-inline: 32px;
+margin: 0 auto;
+
+
+}
+
+
+.blue-bar{
+  max-width: 1290px;
+  min-height: 48px;
+  background: #053685;
+  margin: 0 auto;
+  margin-bottom: 58px;
+}
+
+.tp-wrap{
+  max-width: 1290px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.setup{
+  max-width: 600px;
+  height: auto;
+display: flex;
+gap: 12px;
+margin-bottom: 24px;
+
+}
+
+
+.set-h{
+display: flex;
+max-width: 400px;
+height: auto;
+font-size: clamp(0.8rem, 2vw, 1.2rem);
+color: #053685;
+
+}
+
+.yel-i{
+max-width: 24px;
+max-height: 24px;
+
+}
+
+.reach{
+  list-style: circle;
+font-size: clamp(0.5rem, 2vw, 0.6rem);
+font-weight: 500;
+display: flex;
+max-width: 450px;
+height: auto;
+margin-top: 4px;
+padding-inline: 32px;
+}
+
+
+.mid-line{
+max-width: 100px;
+max-height: 250px;
+
+}
+
+
+.tc{
+  max-width: 400px;
+  height: auto;
+ font-size: clamp(0.8rem, 2vw, 1rem);
+ font-weight: 700;
+ margin-top: 24px;
+ padding-inline: 32px;
+}
+
+
+
+.mon-btn{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 132px;
+  height: 41px;
+border-radius: 30px;
+padding: 0px 28px;
+text-wrap: nowrap;
+cursor: pointer;
+background: #053685;
+border: none;
+margin-top: 32px;
+margin-bottom: 24px;
+color: #fff;
+margin-left: 32px;
+
+}
+.mon-btn2{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 132px;
+  height: 41px;
+border-radius: 30px;
+padding: 0px 28px;
+text-wrap: nowrap;
+cursor: pointer;
+background: #053685;
+border: none;
+margin-top: 56px;
+margin-bottom: 24px;
+color: #fff;
+margin-left: 32px;
+
+}
+
+
+.prep-wrap{
+
+    max-width: 600px;
+  height: auto;
+display: flex;
+gap: 12px;
+margin-bottom: 24px;
+}
+
+.prep-h{
+display: flex;
+max-width: 400px;
+height: auto;
+font-size: clamp(0.8rem, 2vw, 1.2rem);
+color: #053685;
+}
+
+
+
+.fund{
+  list-style: circle;
+font-size: clamp(0.5rem, 2vw, 0.6rem);
+font-weight: 500;
+display: flex;
+max-width: 450px;
+height: auto;
+margin-top: 4px;
+padding-inline: 32px;
+}
+
+
+
+
+
+.sm-img-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+max-width: 450px;
+max-height: 600px;
+flex-grow: 1;
+
+}
+
+.smm-img{
+
+max-width: 450px;
+max-height: 600px;
+
+}

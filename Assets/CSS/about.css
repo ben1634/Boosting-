@@ -1,0 +1,349 @@
+
+/* ================HERO============  */
+.abouts-h{
+max-width: 773px;
+min-height: auto;
+text-align: center;
+color: #ffffff;
+padding-inline: 14px;
+font-size: clamp(2.5rem, 2vw, 4rem);
+font-weight: 500;
+margin-bottom: 32px;
+margin-top: 120px;
+
+}
+
+.abouts-sub{
+
+max-width: 744px;
+min-height: 64px;
+color: #fff;
+display: flex;
+justify-content: center;
+text-align: center;
+line-height: 32px;
+font-size: 1.25rem;
+font-weight: 300;
+margin-bottom: 64px;
+padding-inline: 14px;
+margin-top: 0;
+
+
+}
+
+
+/* ======================ABOUT US============== */
+
+.abouts-us{
+width: 100%;
+height: auto;
+
+}
+
+.abouts-conty{
+width: 100%;
+max-width: 1290px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 70px;
+margin: auto;
+padding-inline: 32px;
+
+}
+
+.about2{
+  max-width: 400px;
+  max-height: 369px;
+display: flex;
+justify-content: flex-end;
+}
+
+.abouts-img1{
+  max-width: 240px;
+  max-height: 362px;
+  display: flex;
+  justify-content:flex-start ;
+  align-items: center;
+}
+
+.about3{
+  max-width: 553px;
+  max-height: 369px;
+
+}
+
+.abouts-img2{
+  max-width: 400px;
+  max-height: 266px;
+}
+
+
+.abs-h{
+  max-width: 1200px;
+  height: auto;
+  font-size: clamp(0.7rem, 2vw, 1.2rem);
+  color: #053685;
+  display: flex;
+  gap: 6px;
+text-align: center;
+margin-bottom: 32px;
+
+}
+
+.abs-h2{
+ font-size: clamp(0.7rem, 2vw, 1.2rem);
+  color: #dd8d15;
+}
+
+
+
+
+.abs-line{
+  width: 150px;
+  height: 1px;
+  transform: translateY(-1600%);
+  background: #053685;
+}
+
+.abs-wrap{
+    max-width: 1200px;
+     height: auto;
+  display: flex;
+  align-items: center;
+  
+  gap:32px;
+  
+}
+
+strong{
+  font-weight: 700;
+}
+
+.tagz{
+
+}
+.tagy{
+max-width: 400px;
+}
+
+.abs-tag1, .abs-tagy1, .abs-tagy2{
+max-width: fit-content;
+height: auto;
+  margin-bottom: 24px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.abs-tag2{
+
+  max-width: fit-content;
+height: auto;
+  margin-bottom: 24px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+
+
+
+/* ================WHY CHOOSE US============  */
+
+.why{
+  width: 100%;
+  height: auto;
+}
+
+
+.why-conty{
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+  height: auto;
+}
+
+
+.why-h{
+max-width: auto;
+height: auto;
+  font-size: clamp(0.7rem, 2vw, 1.2rem);
+  color: #053685;
+text-align: center;
+margin-bottom: 64px;
+}
+
+
+.why-h2{
+   font-size: clamp(0.7rem, 2vw, 1.2rem);
+  margin-right: 6px;
+color: #dd8d15;
+
+}
+.cardys{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding-inline: 32px;
+  margin: 0 auto;
+}
+.cardy{
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  max-width: 195px;
+  min-height: 178px;
+  background: #053685;
+}
+
+
+.cardy-h{
+max-width: 100px;
+min-height: auto;
+text-align: center;
+color: #fff;
+font-size: 0.8rem;
+font-weight: 700;
+margin-bottom: -50;
+
+}
+
+
+
+.cardy-sub{
+max-width: 150px;
+min-height: auto;
+color: #fff;
+font-size: 0.6rem;
+font-weight: 400;
+display: flex;
+justify-content: center;
+text-align: center;
+padding-inline: 4px;
+margin-top: -50;
+
+}
+.chart{
+  width: 50px;
+  height: 50px;
+
+}
+
+
+
+
+
+/* ============================MEET OUR TEAM============================ */
+
+.meet{
+width: 100%;
+
+
+}
+
+.meet-conty{
+width: 100%;
+max-width: 1290px;
+padding-inline: 32px;
+margin: auto;
+
+}
+
+
+.meety-wrap{
+  max-width: 880px;
+padding-inline: 32px;
+margin: auto;
+}
+
+.meet-h{
+max-width: 300px;
+min-height: auto;
+  font-size: clamp(0.7rem, 2vw, 1.2rem);
+  color: #053685;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+text-align: center;
+margin-bottom: 32px;
+  
+}
+
+.meet-h2{
+max-width: auto;
+min-height: auto;
+   font-size: clamp(0.7rem, 2vw, 1.2rem);
+  margin-right: 6px;
+color: #dd8d15;
+
+}
+
+
+.meet-tag{
+  max-width: 600px;
+    font-size: clamp(0.6rem, 2vw, 0.7rem);
+}
+
+.teams{
+display: flex;
+justify-content: center;
+gap: 32px;
+
+
+
+}
+
+
+.team{
+  max-width: 370px;
+  max-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+  margin-top: 32px;
+}
+
+
+.up-img{
+  max-width: 200px;
+  max-height: 167px;
+  transform: translateX(-7%);
+}
+
+.down1{
+max-width: 173px;
+min-height: 56px;
+background: #053685;
+border-bottom-left-radius:8px ;
+border-bottom-right-radius:8px ;
+  transform: translateX(-7%);
+}
+.down2{
+max-width: 173px;
+min-height: 56px;
+background: #dd8d15;
+border-bottom-left-radius:8px ;
+border-bottom-right-radius:8px ;
+  transform: translateX(-7%);
+}
+.down3{
+max-width: 173px;
+min-height: 56px;
+background: #6497f9;
+border-bottom-left-radius:8px ;
+border-bottom-right-radius:8px ;
+  transform: translateX(-7%);
+}
+.down4{
+max-width: 173px;
+min-height: 56px;
+background: #333333;
+border-bottom-left-radius:8px ;
+border-bottom-right-radius:8px ;
+  transform: translateX(-7%);
+}
