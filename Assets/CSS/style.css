@@ -58,6 +58,54 @@ transition: all .3s ease-in-out;
 color: #dd8d15;
 }
 
+/* HAMBURGER MENU */
+
+
+
+
+.ham{
+  background-color: transparent;
+  border: none;
+display: none;
+  cursor: pointer;
+
+}
+
+
+.fes,
+.sec,
+.ted {
+  position: relative;
+  height: 3px;
+  width: 25px;
+  display: block;
+  background-color: #eeecee;
+  margin-bottom: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.fes {
+  transform: rotate(0deg);
+}
+
+.ted {
+  transform: rotate(0deg);
+}
+
+.ham.active .fes {
+  transform: translateY(8px) rotate(45deg);
+}
+.ham.active .ted {
+  bottom: -8px;
+  transform: translateY(-8px) rotate(-45deg);
+}
+.ham.active .sec {
+  display: none;
+}
+
+
+
+
 
 .hero{
   max-width: 773px;
@@ -75,7 +123,7 @@ min-height: 140px;
 text-align: center;
 color: #fff;
 padding-inline: 14px;
-font-size: clamp(4rem, 2vw, 2rem);
+font-size: clamp(4rem, 2vw, 1rem);
 font-weight: 500;
 margin-bottom: 24px;
 margin-top: 200px;
@@ -228,8 +276,8 @@ margin-bottom: 32px;
 
 .ab-line{
   width: 150px;
-  height: 3px;
-  transform: translateY(-500%);
+  height: 1.5px;
+  transform: translateY(-800%);
   background: #053685;
 }
 
@@ -238,14 +286,13 @@ margin-bottom: 32px;
      height: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   
   gap:32px;
   
 }
 
-.tags{
 
-}
 
 .ab-tag1, .ab-tag2, .ab-tag3, .ab-tag4{
 max-width: fit-content;
@@ -273,43 +320,56 @@ height: auto;
 
 
 .mrap{
-  max-width: 1010px;
-  max-height: 60px;
+  max-width: 1200px;
+height: auto;
 display: flex;
-position: relative;
-margin-bottom: 64px;
-
+align-items: flex-start;
+justify-content: flex-start;
+margin-bottom: 48px;
+gap: 48px;
+margin:auto
 
 }
 
-.dig-h{
-    font-size:clamp(0.8rem, 2vw, 1.5rem);
+ .dig-h{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  max-width: 700px;
+    font-size:clamp(0.5rem, 2vw, 1.5rem);
   font-weight: 700;
-  margin-right: 7px;
+  gap: 7px;
+  margin-right: 24px;
   color: #053685;
 }
 
 .serv-h{
-    font-size:clamp(0.8rem, 2vw, 1.5rem);
+   display: flex;
+   flex-wrap: nowrap;
+    max-width: 400px;
+    height: auto;
+    font-size:clamp(0.5rem, 2vw, 1.5rem);
   font-weight: 700;
   color: #dd8d15;
-   margin-right: 7px;
+   
 }
 
 
 .del-h{
   color: #053685;
-    font-size:clamp(0.8rem, 2vw, 1.5rem);
+    font-size:clamp(0.5rem, 2vw, 2rem);
   font-weight: 700;
 }
 
 
 .mline{
-  width: 150px;
-  height: 3px;
-  position: absolute;
-  left: 105%;
-  top: 20%;
+  width: 120px;
+  height: 1.5px;
+  display: flex;
+  flex-wrap: wrap;
+margin-top: 9px;
+  justify-content: flex-start;
+  align-items: flex-start;
   background: #053685;
 }
 
@@ -428,7 +488,7 @@ background: #dd8d15e6;
 
 }
 
-/* ==================BANNER SECTION================= */
+/* ==================SOCIAL MEDIA SECTION================= */
 
 .s-media{
   background: url(/Assets/Images/nav-hero-bg.png) #053685;
@@ -456,7 +516,7 @@ justify-content: center;
 }
 
 .sm-h1{
-font-size: 2rem;
+font-size: clamp(0.9rem, 5vw, 2rem);
 font-weight: 700;
 margin-right: 7px;
 color: #fff;
@@ -465,7 +525,7 @@ color: #fff;
 
 
 .sm-h2{
-font-size: 2rem;
+font-size: clamp(0.9rem, 5vw, 2rem);
 font-weight: 700;
 margin-right: 7px;
 color: #dd8d15;
@@ -474,7 +534,7 @@ color: #dd8d15;
 
 
 .sm-h3{
-font-size: 2rem;
+font-size: clamp(0.9rem, 5vw, 2rem);
 font-weight: 700;
 color: #fff;
 
@@ -675,11 +735,10 @@ background: #dd8d15e5;}
 
 max-width:1020px ;
 max-height: 40px;
-font-size: 0.8rem;
+font-size: 0.6rem;
 font-weight: 300;
 color: #fff;
 text-align: center;
-
 margin:68px auto;
 }
 
@@ -722,7 +781,7 @@ margin: auto
 
 
 .fox-wrap{
-  max-width: ;
+  max-width:450px ;
   display: flex;
   gap: 15px;
 }
@@ -730,7 +789,7 @@ margin: auto
 .feed-h{
   max-width: 305px;
   max-height: 47px;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 700;
   color: #053685;
 }
@@ -861,7 +920,7 @@ margin: auto;
 max-width: 1290px;
 min-height: 40px;
 text-align: center;
-font-size: 2rem;
+font-size: clamp(1rem, 3vw, 2rem);
 font-weight: 700;
 color: #053685;
 
@@ -916,7 +975,7 @@ max-height: 35px;
 .mail-h{
 max-width:374px ;
 max-height: 35px;
-font-size: 1rem;
+font-size: clamp(0.5rem, 2vw, 0.8rem);
 font-weight: 700;
 text-align: center;
 color: #053685;
@@ -926,7 +985,7 @@ color: #053685;
 .mail-h2{
 max-width:374px ;
 max-height: 35px;
-font-size: 1rem;
+font-size: clamp(0.5rem, 2vw, 0.8rem);
 font-weight: 700;
 color: #dd8d15;
 
@@ -950,17 +1009,17 @@ padding-inline: 8px;
   justify-content: center;
   align-items: center;
   max-width: 132px;
-  height: 28px;
+  min-height: 28px;
 border-radius: 10px;
 padding: 0px 16px;
-text-wrap: nowrap;
+text-wrap: wrap;
 cursor: pointer;
 background: #dd8d15;
 color: #fff;
 border: none;
 margin-top: 24px;
 margin-bottom: 24px;
-font-size: 0.7rem;
+font-size: clamp(0.4rem, 1vw, 0.5rem);
 font-weight: 400;
 transition: all .3s ease-in-out;
 
@@ -996,9 +1055,16 @@ align-items: flex-end;
 
 }
 
+.e-inp{
+  min-width: 50px;
+  max-height: 48px;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
 .e-inp::placeholder{
   padding-left: 8px;
-font-size: 0.7rem;
+font-size: 0.4rem;
 
 }
 
@@ -1278,4 +1344,245 @@ max-height: 24px;
   font-size: 0.7rem;
   font-weight: 300;
   margin-top: 32px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+@media (max-width: 480px) {
+
+  .nav-hero {
+    position: relative;
+  }
+
+  /* =========================
+     HAMBURGER
+  ========================= */
+
+  .ham {
+
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 2000;
+    cursor: pointer;
+
+  }
+
+  .ham span {
+    width: 100%;
+    height: 3px;
+
+    background: #fff;
+    border-radius: 5px;
+  }
+
+
+  /* =========================
+     SIDEBAR
+  ========================= */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left:-300px;
+    right: 0;
+    width: 280px;
+    max-width: 80%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    z-index: 1500;
+    transition: left 0.3s ease;
+    border-right:none;
+  }
+
+
+  /* OPEN SIDEBAR */
+
+  .navbar.active {
+    left: 0;
+  }
+
+
+  /* =========================
+     LOGO
+  ========================= */
+
+  .logos {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    padding-inline: 32px;
+
+    background: #053685;
+
+    box-sizing: border-box;
+  }
+
+
+  .logo {
+    width: 100px;
+    height: auto;
+    transform: translateY(-70%);
+  }
+
+
+  /* =========================
+     NAV LINKS
+  ========================= */
+
+  .navlinks {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 20px;
+
+    padding: 0 32px;
+
+    box-sizing: border-box;
+  }
+
+
+  .navlink a {
+    color: #053685;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-decoration: none;
+  }
+
+
+
+
+
+
+/* NAV HERO SECTION */
+
+.nav-hero{
+  min-height: 200px;
+  position: relative;
+}
+
+
+.hero-h{
+  font-size: clamp(2rem, 5vw, 1rem);  
+margin-top: 100px;
+
+}
+
+
+.hero-sub{
+  font-size: clamp(0.9rem, 5vw, 0.7rem);
+margin-top: -60px;
+}
+
+.btn1{
+  max-width: 150px;
+  height: 40px;
+  padding: 10px 20px;
+ 
+}
+
+.btn2{
+  max-width: 150px;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+
+.btn2-arr{
+  max-width: 100px;
+  height: 20px;
+  font-size: 0.7rem;
+}
+
+
+/* ABOUT US  */
+.about-conty{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
+/* DIGITAL MARKETING */
+
+.mboxes{
+
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* SOCIAL MEDIA PACKS */
+
+
+
+
+
+
+
+
+/* CLIENT'S  FEEDBACK */
+
+
+
+.swiper-wrapper{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.arrows{
+
+transform: translateY(-10%);
+
+}
+
+.fox-h{
+  display: none;
+}
+
+.head-wrap{
+  padding-inline: 32px;
+}
+
+
+/* BRANDS */
+
+.news{
+  padding-inline: 6px;
+}
+
+
+
+/* FOOTER SECTION */
+
+
+
+
 }
