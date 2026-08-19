@@ -1,13 +1,26 @@
 console.log("JavaScript loaded");
 
 let input = document.querySelector("#phone");
+  const hamBtn = document.querySelector(".ham");
+  const navbar = document.querySelector(".navbar");
+  const navlinks = document.querySelector(".nav-links");
 
 
+
+
+  
+
+// Hamburger
+hamBtn.addEventListener("click", function () {
+  hamBtn.classList.toggle("active");
+  navbar.classList.toggle("active");
+  navlinks.classList.toggle("active");
+});
 
 
 
  var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
           el: '.swiper-pagination',
@@ -21,3 +34,7 @@ let input = document.querySelector("#phone");
       });
 
     window.intlTelInput(input,{});
+
+
+
+  
