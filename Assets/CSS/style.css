@@ -1435,7 +1435,7 @@ line-height: ;
     position: absolute;
     top: 20px;
     right: 25px;
-    z-index: 2000;
+    z-index: 999;
     cursor: pointer;
 
   }
