@@ -278,6 +278,12 @@ background: #dd8d15e6;
  
 }
 
+
+.boost-wrap{
+  max-width: 400px;
+  padding-inline: 8px;
+  margin: auto;
+}
 .boost-sub{
   max-width: 250px;
   font-size: 0.6rem;
@@ -285,6 +291,15 @@ background: #dd8d15e6;
 
 .boost-line{
   width: 70px;
+}
+
+.mark-h{
+font-size: 1rem;
+
+}
+
+.cut-wrap{
+  padding-inline: 8px;
 }
 
 .mkt-wrap{
@@ -295,9 +310,14 @@ background: #dd8d15e6;
 .cut-btn{
   color: #fff;
 }
+/* 
 
-
-
+.footer-links, .footer-conty{
+  padding-inline: 8px;
+  margin: auto;
+  justify-content: center;
+}
+ */
 
 
 }
