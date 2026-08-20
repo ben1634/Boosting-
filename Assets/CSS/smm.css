@@ -1,9 +1,17 @@
 /* ===============HERO============= */
-.exp-h{
-font-size: clamp(3rem, 2vw, 2rem);
+.exps-h{
+  max-width: 1200px;
+font-size: clamp(1.5rem, 2vw, 4rem);
 color: #fff;
 margin-top: 150px;
 margin-bottom: 150px;
+min-height: auto;
+text-align: center;
+color: #ffffff;
+padding-inline: 14px;
+font-weight: 500;
+
+
 }
 
 
@@ -15,6 +23,7 @@ width: 100%;
 
 
 }
+
 
 
 .smm-conty{
@@ -161,7 +170,7 @@ padding-bottom: 15px;
   text-align: center;
   display: flex;
   justify-content: flex-start;
-  font-size: clamp(0.6rem, 2vw, 0.9rem);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   font-weight: 400;
   color: #fff;
 margin: auto;
@@ -267,5 +276,61 @@ margin-top: 24px;
 
 .phone::placeholder{
 padding-inline: 10px;
+
+}
+
+
+
+
+.g2-btn{
+
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 132px;
+  height: 41px;
+border-radius: 30px;
+padding: 0px 28px;
+text-wrap: nowrap;
+cursor: pointer;
+background: #dd8d15;
+border: none;
+margin-top: 24px;
+margin-bottom: 24px;
+color: #fff;
+
+}
+
+.g2-btn:hover{
+background: #dd8d15e5;}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+.comp{
+  grid-template-columns: 1fr;
+  gap: 12px 12px;
+}
+
+
+.checks3{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.g2-btn{
+height: 30px;
+padding: 0px 19px;
+font-size: 0.8rem;
+
+}
+
+
+
 
 }
