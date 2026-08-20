@@ -1,4 +1,58 @@
 
+
+
+/* HAMBURGER MENU */
+
+
+
+
+.ham{
+  background-color: transparent;
+  border: none;
+display: none;
+  cursor: pointer;
+
+}
+
+
+.fes,
+.sec,
+.ted {
+  position: relative;
+  height: 3px;
+  width: 25px;
+  display: block;
+  background-color: #eeecee;
+  margin-bottom: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.fes {
+  transform: rotate(0deg);
+}
+
+.ted {
+  transform: rotate(0deg);
+}
+
+.ham.active .fes {
+  transform: translateY(8px) rotate(45deg);
+}
+.ham.active .ted {
+  bottom: -8px;
+  transform: translateY(-8px) rotate(-45deg);
+}
+.ham.active .sec {
+  display: none;
+}
+
+
+
+
+
+
+
+
 /* ================HERO============  */
 .abouts-h{
 max-width: 773px;
@@ -13,6 +67,8 @@ margin-top: 120px;
 
 }
 
+
+
 .abouts-sub{
 
 max-width: 744px;
@@ -21,8 +77,7 @@ color: #fff;
 display: flex;
 justify-content: center;
 text-align: center;
-line-height: 32px;
-font-size: 1.25rem;
+font-size: clamp(0.7rem, 2vw, 1.5rem);
 font-weight: 300;
 margin-bottom: 64px;
 padding-inline: 14px;
@@ -79,9 +134,9 @@ justify-content: flex-end;
 
 
 .abs-h{
-  max-width: 1200px;
+  max-width: 600px;
   height: auto;
-  font-size: clamp(0.7rem, 2vw, 1.2rem);
+  font-size: clamp(0.7rem, 2vw, 1rem);
   color: #053685;
   display: flex;
   gap: 6px;
@@ -101,22 +156,69 @@ margin-bottom: 32px;
 .abs-line{
   width: 150px;
   height: 1px;
-  transform: translateY(-1600%);
+  transform: translateY(1600%);
   background: #053685;
 }
 
 .abs-wrap{
-    max-width: 1200px;
+    max-width: 1000px;
      height: auto;
   display: flex;
-  align-items: center;
-  
+  justify-content: flex-end;
   gap:32px;
   
 }
 
+
+
+
+
+
+.abs4-h{
+  max-width: 400px;
+  height: auto;
+  font-size: clamp(0.7rem, 4vw, 1.2rem);
+  color: #053685;
+  display: flex;
+  gap: 6px;
+text-align: center;
+margin-bottom: 32px;
+
+}
+
+.abs4-h2{
+ font-size: clamp(0.7rem, 4vw, 1.2rem);
+  color: #dd8d15;
+}
+
+
+
+
+.abs4-line{
+  width: 150px;
+  height: 0.5px;
+  transform: translateY(-3000%);
+  background: #053685;
+}
+
+.abs4-wrap{
+    max-width: 400px;
+     height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:32px;
+  
+}
+
+
+
+
+
+
+
 strong{
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tagz{
@@ -141,7 +243,7 @@ height: auto;
 height: auto;
   margin-bottom: 24px;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -183,6 +285,7 @@ color: #dd8d15;
 .cardys{
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
   padding-inline: 32px;
@@ -290,6 +393,7 @@ color: #dd8d15;
 
 .teams{
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 gap: 32px;
 
@@ -346,4 +450,426 @@ background: #333333;
 border-bottom-left-radius:8px ;
 border-bottom-right-radius:8px ;
   transform: translateX(-7%);
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+@media (max-width: 480px) {
+
+
+/* NAV HERO SECTION */
+
+.nav-hero{
+max-height: 400px;
+  position: relative;
+}
+
+
+.hero-h{
+  font-size: clamp(1.8rem, 2vw, 1rem);  
+margin-top: 250px;
+margin-bottom: 100px;
+
+}
+
+
+.hero-sub{
+  font-size: clamp(0.9rem, 3vw, 0.7rem);
+margin-top: -60px;
+line-height: ;
+}
+
+.btns{
+
+  margin-top: -10px;
+}
+
+.btn1{
+  max-width: 150px;
+  height: 40px;
+  padding: 10px 20px;
+ 
+}
+
+.btn2{
+  max-width: 150px;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+
+.btn2-arr{
+  max-width: 100px;
+  height: 20px;
+  font-size: 0.7rem;
+}
+
+
+  /* =======
+     HAMBURGER===== */
+
+  .ham {
+
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 2000;
+    cursor: pointer;
+
+  }
+
+  .ham span {
+    width: 100%;
+    height: 3px;
+
+    background: #fff;
+    border-radius: 5px;
+  }
+
+
+  /* ============
+     SIDEBAR
+  ============ */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left:-300px;
+    right: 0;
+    width: 280px;
+    max-width: 80%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    z-index: 1500;
+    transition: left 0.3s ease;
+    border-right:1px solid #053685;
+  }
+
+
+  /* OPEN SIDEBAR */
+
+  .navbar.active {
+    left: 0;
+  }
+
+
+  /* =========================
+     LOGO
+  ========================= */
+
+  .logos {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    padding-inline: 32px;
+
+    background: #053685;
+
+    box-sizing: border-box;
+  }
+
+
+  .logo {
+    width: 100px;
+    height: auto;
+    transform: translateY(-70%);
+  }
+
+
+  /* =========================
+     NAV LINKS
+  ========================= */
+
+  .navlinks {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 20px;
+
+    padding: 0 32px;
+
+    box-sizing: border-box;
+  }
+
+
+  .navlink a {
+    color: #053685;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-decoration: none;
+  }
+
+
+
+
+
+
+/* ABOUT US  */
+.about-conty{
+  grid-template-columns: repeat(1, 1fr);
+}
+.abouts-conty{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.about2{
+    max-width: 600px;
+  max-height: 369px;
+justify-content: center;
+}
+
+.abouts-img1{
+  max-width:600px;
+   max-height: 600px;
+   align-items: flex-start;
+}
+
+
+.abs-wrap{
+    max-width: 500px;
+}
+
+.abs-h{
+  max-width: 400px;
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+
+}
+
+.abs-line{
+  width:80px;
+}
+
+
+
+strong{
+  font-size: 0.7rem;
+}
+
+.abs-tag1, .abs-tagy1, .abs-tagy2{
+max-width: fit-content;
+height: auto;
+  margin-bottom: 24px;
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
+
+
+/* WHY CHOOSE US */
+
+
+.cardys{
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.cardy{
+
+
+}
+
+
+
+/* DIGITAL MARKETING */
+
+.mboxes{
+
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.mrap{
+  max-width: 375px;
+gap: 0px;
+margin:0 auto;
+padding-inline: 8px;
+margin-left: 32px;  
+margin-bottom: -30px;
+
+
+}
+
+.dig-h{
+  font-size: clamp(0.8rem, 2.8vw, 2rem);
+}
+
+
+.serv-h{
+  font-size: clamp(0.8rem, 2.8vw, 2rem);
+}
+
+.mline{
+  width: 80px;
+margin-top: 5px;
+
+}
+
+
+.mboxes{
+padding-inline: 8px;
+    grid-template-columns:repeat( 2, 180px);
+      gap: 8px 16px;
+
+}
+
+.mbox{
+
+  height: 280px;
+}
+
+.m-img{
+width: 100%;
+  max-height: 200px;
+}
+
+.b-h{
+  font-size: 0.5rem;
+  max-width: 300px;
+  height: auto;
+}
+
+.b-sub{
+  font-size: 0.5rem;
+  max-width: 160px;
+  font-weight: 200;
+  height: auto;
+}
+
+
+.mbtn{
+padding: 4px 15px;
+height: 30px;
+  font-size: 0.6rem;
+
+}
+
+
+.ex-btn{
+  max-width: 150px;
+  height: 30px;
+  padding: 10px 20px;
+  font-size: 0.6rem;
+}
+
+
+
+/* SOCIAL MEDIA PACKS */
+
+
+
+
+
+
+
+
+/* CLIENT'S  FEEDBACK */
+
+
+
+.swiper-wrapper{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.arrows{
+
+transform: translateY(-10%);
+
+}
+
+.fox-h{
+  display: none;
+}
+
+.head-wrap{
+  padding-inline: 32px;
+}
+
+
+/* BRANDS */
+
+.brandy{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding-inline: 8px;
+}
+
+.brand-h{
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.news{
+  padding-inline: 6px;
+}
+
+
+.con-btn{
+  height: 30px;
+  padding: 0px 16px;
+  display: none;
+}
+
+.w-icon{
+  display: none;
+  max-width: 32px;
+  height: 32px;
+}
+
+.letter{
+
+ margin-left: 75px;
+
+}
+
+.in-wrap{
+
+
+
+}
+
+/* FOOTER SECTION */
+
+
+
+
+
+
+
 }
