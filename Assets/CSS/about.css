@@ -11,6 +11,8 @@
   border: none;
 display: none;
   cursor: pointer;
+    z-index: 999;
+
 
 }
 
