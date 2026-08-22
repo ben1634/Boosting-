@@ -20,7 +20,7 @@ font-weight: 500;
 
 .social-mm{
 width: 100%;
-
+padding-inline: 8px;
 
 }
 
@@ -30,7 +30,6 @@ width: 100%;
   width: 100%;
 max-width: 1290px;
 height: auto;
-padding-inline: 32px;
 margin: 0 auto;
 display: flex;
 flex-wrap: wrap;
