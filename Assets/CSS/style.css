@@ -54,9 +54,32 @@ transition: all .3s ease-in-out;
 
 }
 
-.navlink a:hover{
+/* .navlink a:hover{
 color: #dd8d15;
+} */
+
+
+
+.navlink a::before{
+content: ''; 
+position: absolute;
+top: 100%;
+left: 0;
+width: 0;
+height: 2px;
+background: #dd8d15;
+transition: .3s;
+
 }
+
+.navlink a:hover::before{
+width: 100%;
+
+
+
+}
+
+
 
 /* HAMBURGER MENU */
 
