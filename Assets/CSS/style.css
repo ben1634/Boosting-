@@ -1494,7 +1494,7 @@ line-height: ;
     gap: 32px;
     z-index: 1500;
     transition: left 0.3s ease;
-    border-right:1px solid #053685;
+    border-right:none;
   }
 
 
